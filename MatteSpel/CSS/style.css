@@ -1,0 +1,65 @@
+body, div, p, input, button, #box, #myBox, #my_centered_buttons {
+    margin: 0;
+    padding: 0;
+}
+   
+body, html{
+	height: 100%;
+}
+
+body {
+	background-color: grey;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100%;
+	background-size: cover;
+    background-image:url('moon.jpg');
+    
+}
+
+#my_centered_buttons {
+	display: flex;
+	justify-content: center;
+}
+
+
+div{
+    border: 3px salmon;
+    width: 80%;
+    margin: 10% auto;
+}
+
+p {
+	font-size: 32px;
+	text-align: center;
+	width: 100%;
+	color: white;
+	font-weight: bold;
+}
+
+input {
+	font-size: 25px;
+	text-align: center;
+	width: 66px;
+	margin: 20px 217px 20px 217px;
+
+}
+
+button {
+	width: 250px;
+	height: 35px;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+#box{
+    width:550px;
+    margin: 0 auto;
+	margin-top: 0px;
+	margin-left: 0px
+	}
+	
+#myBox{
+
+	background-color: brown;
+}
