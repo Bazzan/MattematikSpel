@@ -37,22 +37,28 @@
     </fieldset>     
   </form>
 
+
+<label for = "box">Vad blir:</label>
+<div id="box">
+    <canvas id="myBox" width="200" height="75"> </canvas>
+    
+</div>
+
+<footer>
+<label for = "answer">Ditt svar</label>
+<input type = "text"
+id = "answer">
+</footer>
 <button type = "button"
-onclick = "checkGuess()">
+    id = "checkAnswer"
+    onclick = "checkAnswer()">
 Kontrollera ditt svar
+
 
 <button type = "button"
     id = "again"
     onclick = "">
 Nytt tal
-
-
-
-<div id="box">
-    <canvas id="myBox" width="550" height="400"> </canvas>
-</div>
-
-
 
 
 </body>

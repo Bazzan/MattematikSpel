@@ -9,13 +9,11 @@ body, html{
 
 
 body {
-	background-color: grey;
+	background-color: rgb(228, 228, 228);
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 100%;
-	background-size: cover;
-    background-image:url('moon.jpg');
-    
+	background-size: cover;    
 }
 
 #my_centered_buttons {
@@ -61,7 +59,7 @@ button {
 }
 
 #box{
-    width:550px;
+    width:0px;
     margin: 0 auto;
 	margin-top: 0px;
 	margin-left: 0px
@@ -69,5 +67,5 @@ button {
 	
 #myBox{
 
-	background-color: brown;
+	background-color: white;
 }
