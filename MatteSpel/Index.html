@@ -13,6 +13,41 @@
     Count this stuff :)
 </h1>
 
+<form>
+    <fieldset>
+     <legend>Välj räknesätt</legend>
+     <p class = new_font>                   
+        <input type = "radio"
+               name = "radMath"
+               id = "addition"
+               value = "addition"
+               checked = "checked" />
+        <label for = "addition">Addition</label>
+        <input type = "radio"
+               name = "radMath"
+               id = "subtraktion"
+               value = "subtraktion" />
+        <label for = "subtraktion">Subtraktion</label>
+        <input type = "radio"
+               name = "radMath"
+               id = "multiplikation"
+               value = "multiplikation" />
+        <label for = "multiplikation">Multiplikation</label>
+      </p>       
+    </fieldset>     
+  </form>
+
+<button type = "button"
+onclick = "checkGuess()">
+Kontrollera ditt svar
+
+<button type = "button"
+    id = "again"
+    onclick = "">
+Nytt tal
+
+
+
 <div id="box">
     <canvas id="myBox" width="550" height="400"> </canvas>
 </div>
