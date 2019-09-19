@@ -13,7 +13,8 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 100%;
-	background-size: cover;    
+	margin-left: 20%;
+	margin-right: 20%;
 }
 
 #my_centered_buttons {
