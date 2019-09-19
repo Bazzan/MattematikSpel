@@ -27,8 +27,8 @@ window.onload = function () {
             solution = temp1 - temp2;
         }
         if(currentMode == "multiplication"){
-            var temp1 = Math.floor(Math.random() * 100) + 1;
-            var temp2 = Math.floor(Math.random() * 100) + 1;
+            var temp1 = Math.floor(Math.random() * 10) + 1;
+            var temp2 = Math.floor(Math.random() * 10) + 1;
             equation = temp1 + "x" + temp2;
             solution = temp1 * temp2;
         }
