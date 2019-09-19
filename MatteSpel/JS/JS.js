@@ -33,7 +33,9 @@ window.onload = function () {
         context.fillStyle = "black";
         context.fillText("" + equation + "", 50, 30);
         
-        
+    }
+
+
     SetAddition = function (){
         currentMode = "addition";
     }
@@ -46,6 +48,6 @@ window.onload = function () {
         currentMode = "multiplication";
     }
 
-}
+
 
 };
