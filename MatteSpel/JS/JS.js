@@ -6,13 +6,15 @@ window.onload = function () {
     var equation;
     var solution;
     var points = 0;
-    
+    var textRuta = document.getElementById("answer");
 
     
 
     DrawQuestion = function () {
         context.clearRect(0, 0, canvas.width, canvas.height);
         context.beginPath();       
+        document.getElementById("answer").value = "";
+        
 
         if(currentMode == "addition"){
             var temp1 = Math.floor(Math.random() * 100) + 1;
@@ -55,6 +57,12 @@ window.onload = function () {
 
 CheckAnswer = function (){
     var answer = document.getElementById("answer").value;
+    
+    // if (typeof answer != 'number' || answer instanceof String)
+    if (isNaN(answer) || answer =="" || answer.length == 0 || answer == null){
+        alert("You need to answer with a number");
+        return;
+    }
     answer = parseInt(answer, 10);
     if(answer == solution){
         points++;
