@@ -14,7 +14,7 @@ window.onload = function () {
         context.clearRect(0, 0, canvas.width, canvas.height);
         context.beginPath();       
         document.getElementById("answer").value = "";
-        
+        document.getElementById('checkAnswer').style.visibility = 'visible';
 
         if(currentMode == "addition"){
             var temp1 = Math.floor(Math.random() * 100) + 1;
@@ -74,6 +74,7 @@ CheckAnswer = function (){
         //context.fillText("You're correct! Your points: " + points, 10, 30);
         context.fillText("You're correct!", 10, 30); 
         context.fillText("Your points: " + points, 10, 60);
+        document.getElementById('checkAnswer').style.visibility = 'hidden';
     }
     
     else{
