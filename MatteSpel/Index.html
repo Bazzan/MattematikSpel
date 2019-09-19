@@ -23,16 +23,19 @@
                name = "radMath"
                id = "addition"
                value = "addition"
+               onchange= "SetAddition()"
                checked = "checked" />
         <label for = "addition">Addition</label>
         <input type = "radio"
                name = "radMath"
                id = "subtraktion"
+               onchange= "SetSubtraction()"
                value = "subtraktion" />
         <label for = "subtraktion">Subtraktion</label>
         <input type = "radio"
                name = "radMath"
                id = "multiplikation"
+               onchange= "SetMultiplication()"
                value = "multiplikation" />
         <label for = "multiplikation">Multiplikation</label>
       </p>       
@@ -59,7 +62,7 @@ Kontrollera ditt svar
 
 <button type = "button"
     id = "again"
-    onclick = "">
+    onclick = "DrawQuestion()">
 Nytt tal
 
 
