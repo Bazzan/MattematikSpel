@@ -60,7 +60,6 @@ window.onload = function () {
 CheckAnswer = function (){
     var answer = document.getElementById("answer").value;
     
-    // if (typeof answer != 'number' || answer instanceof String)
     if (isNaN(answer) || answer =="" || answer.length == 0 || answer == null){
         alert("You need to answer with a number");
         return;
@@ -73,7 +72,6 @@ CheckAnswer = function (){
         context.textBaseline = "middle";
         context.font = "15pt Calibri, Arial";        
         context.fillStyle = "black";
-        //context.fillText("You're correct! Your points: " + points, 10, 30);
         context.fillText("You're correct!", 10, 30); 
         context.fillText("Your points: " + points, 10, 60);
         document.getElementById('checkAnswer').style.visibility = 'hidden';
@@ -89,7 +87,7 @@ CheckAnswer = function (){
     }
 }
 // Denna tar först in vilket svar man har från textboxen man skrivit in. Sedan kollar den om man skrivit in ett nummer och inget annat som svar.
-//Efter det så jämför den svaret med det man själv skrivit, om det är rätt så plussas ett poäng på, och ritar ut att man hade rätt och skriver hur många poäng man har
+// Efter det så jämför den svaret med det man själv skrivit, om det är rätt så plussas ett poäng på, och ritar ut att man hade rätt och skriver hur många poäng man har
 // eller om man hade fel så ritar den bara ut att man hade fel svar. 
 
 };
