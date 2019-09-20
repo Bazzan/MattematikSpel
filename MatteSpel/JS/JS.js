@@ -2,7 +2,6 @@ window.onload = function () {
     var currentMode = "addition";
     var canvas = document.getElementById("myBox");
     var context = canvas.getContext("2d");
-    var mathProblem;
     var equation;
     var solution;
     var points = 0;
