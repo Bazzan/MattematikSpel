@@ -41,7 +41,8 @@ window.onload = function () {
         context.fillText("" + equation + "", 50, 30);
         
     }
-
+    // DrawQuestion rensar det som är ut ritat i kanvasen och tar även bort det man skrivit i textboxen. sedan kollar den vilken radioknapp som är iklickad.
+    // beroende på vilken som är i klickad så tar den fram slumpade tal som och sätter det korrekta svaret i solution variabeln.
 
     SetAddition = function (){
         currentMode = "addition";
@@ -54,6 +55,7 @@ window.onload = function () {
     SetMultiplication = function (){
         currentMode = "multiplication";
     }
+    // dessa sätter current mode som vi använder för att kolla vilken typ av matte som ska göras.
 
 CheckAnswer = function (){
     var answer = document.getElementById("answer").value;
@@ -86,5 +88,8 @@ CheckAnswer = function (){
         context.fillText("Wrong answer :(", 10, 30);
     }
 }
+// Denna tar först in vilket svar man har från textboxen man skrivit in. Sedan kollar den om man skrivit in ett nummer och inget annat som svar.
+//Efter det så jämför den svaret med det man själv skrivit, om det är rätt så plussas ett poäng på, och ritar ut att man hade rätt och skriver hur många poäng man har
+// eller om man hade fel så ritar den bara ut att man hade fel svar. 
 
 };
